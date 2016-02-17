@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-  #eat moar cookies -- cookie monster -- by order of israel
+  
   def index
     @categories = Category.alphabetical.paginate(:page => params[:page]).per_page(10)
   end
